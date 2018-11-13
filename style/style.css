@@ -9,7 +9,7 @@ body{
     margin: 0;
     padding: 0;
     width: 100%;
-    float: left;
+    float: right;
     list-style: none;
     position: relative;
     background: #fff;
@@ -24,20 +24,40 @@ body{
     display: block;
     padding: 0 10px 0 10px;
     font-size: 18px;
+    text-transform: uppercase;
     text-decoration: none;
     color: rgba(0, 0, 0, .75);
     border-bottom: 2px solid transparent;
 }
-#navigation > li > a:active,
+#navigation > li > a:focus,
 #navigation > li > a:hover{
-    /* background: #e9e7dc; */
+    outline: none;
+    color: #c0b283;
+    /* background-color: #dcd0c079; */
+    border-bottom: 2px solid #c0b283;
+}
+.active{
     color: #c0b283;
     background-color: #dcd0c079;
     border-bottom: 2px solid #c0b283;
-    /* margin: -2px 0; */
 }
 #navigation > li > a > i{
     vertical-align: middle !important;
     padding-right: 5px !important;
     padding-bottom: 5px !important;
+}
+#main{
+    margin: 0 auto;
+    width: 90vw;
+    padding-top: 36px;
+}
+.important{
+    color: red;
+    font-size: 18px;
+}
+.announcement{
+    list-style: none;
+}
+.announcement > li{
+    padding-top: 12px;
 }
